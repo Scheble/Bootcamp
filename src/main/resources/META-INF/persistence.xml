@@ -6,19 +6,20 @@
 
 	<persistence-unit name="bootcamp" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		    <class>dominio.Country</class>
-		    <class>dominio.Forecaste</class>
-		    <class>dominio.State</class>
-		    <class>domino.Weather</class>
-		    
-		<properties>			
-	         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/asigancionfinal?autoReconnect=true"/>
-	         <property name="javax.persistence.jdbc.user" value="root"/>
-	         <property name="javax.persistence.jdbc.password" value="1234"/>
-	         <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>  
-	        
-		</properties>      		
-        	
-		    
+		<class>src.main.bootcamp.dominio.Country</class>
+		<class>src.main.bootcamp.dominio.Forecaste</class>
+		<class>src.main.bootcamp.dominio.State</class>
+		<class>src.main.bootcamp.dominio.Weather</class>
+
+		<properties>
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/asigancionfinal?autoReconnect=true" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="1234" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+
+		</properties>
+
+
 	</persistence-unit>
 </persistence>
